@@ -13076,7 +13076,7 @@ int LDAPURB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -13138,7 +13138,7 @@ int LDAPURH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -13201,7 +13201,7 @@ int LDAPURSB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -13264,7 +13264,7 @@ int LDAPURSH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -13326,7 +13326,7 @@ int LDAPURSW(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -13389,7 +13389,7 @@ int LDAPUR_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14184,7 +14184,7 @@ int LDPSW(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && (ctx->t==ctx->n || ctx->t2==ctx->n) && ctx->n!=0x1f) {
+	if(ctx->wback && (ctx->t==ctx->n || ctx->t2==ctx->n) && ctx->n!=0x1f) {
 		ctx->c = ConstrainUnpredictable(Unpredictable_WBOVERLAPST);
 		// assert
 		UNPREDICTABLE
@@ -14293,7 +14293,7 @@ int LDP_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && (ctx->t==ctx->n || ctx->t2==ctx->n) && ctx->n!=0x1f) {
+	if(ctx->wback && (ctx->t==ctx->n || ctx->t2==ctx->n) && ctx->n!=0x1f) {
 		ctx->c = ConstrainUnpredictable(Unpredictable_WBOVERLAPST);
 		// assert
 		UNPREDICTABLE
@@ -14404,7 +14404,7 @@ int LDRB_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14472,7 +14472,7 @@ int LDRB_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14551,7 +14551,7 @@ int LDRH_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14618,7 +14618,7 @@ int LDRH_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14700,7 +14700,7 @@ int LDRSB_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14770,7 +14770,7 @@ int LDRSB_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14852,7 +14852,7 @@ int LDRSH_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14920,7 +14920,7 @@ int LDRSH_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -14999,7 +14999,7 @@ int LDRSW_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -15097,7 +15097,7 @@ int LDRSW_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -15244,7 +15244,7 @@ int LDR_imm_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -15411,7 +15411,7 @@ int LDR_reg_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -15968,7 +15968,7 @@ int LDTR(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16035,7 +16035,7 @@ int LDTRB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16102,7 +16102,7 @@ int LDTRH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16170,7 +16170,7 @@ int LDTRSB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16238,7 +16238,7 @@ int LDTRSH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16305,7 +16305,7 @@ int LDTRSW(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16693,7 +16693,7 @@ int LDURB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16755,7 +16755,7 @@ int LDURH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16818,7 +16818,7 @@ int LDURSB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16881,7 +16881,7 @@ int LDURSH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -16943,7 +16943,7 @@ int LDURSW(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -17037,7 +17037,7 @@ int LDUR_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -19232,7 +19232,7 @@ int PRFM_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -19330,7 +19330,7 @@ int PRFM_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -19392,7 +19392,7 @@ int PRFUM(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25021,7 +25021,7 @@ int STLURB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25083,7 +25083,7 @@ int STLURH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25146,7 +25146,7 @@ int STLUR_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25452,6 +25452,8 @@ int STP_gen(context *ctx, Instruction *instr)
 	/* class iclass_post_indexed */
 	/* opc=x0|101|V=0|001|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx */
 	if((INSWORD & 0x7FC00000)==0x28800000) {
+        ctx->wback = TRUE;
+        ctx->postindex = TRUE;
 		decode_fields32(ENC_STP_32_LDSTPAIR_POST, ctx, instr);
 		if(ctx->opc==0) OK(ENC_STP_32_LDSTPAIR_POST);
 		if(ctx->opc==2) OK(ENC_STP_64_LDSTPAIR_POST);
@@ -25459,6 +25461,8 @@ int STP_gen(context *ctx, Instruction *instr)
 	/* class iclass_pre_indexed */
 	/* opc=x0|101|V=0|011|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx */
 	if((INSWORD & 0x7FC00000)==0x29800000) {
+        ctx->wback = TRUE;
+        ctx->postindex = FALSE;
 		decode_fields32(ENC_STP_32_LDSTPAIR_PRE, ctx, instr);
 		if(ctx->opc==0) OK(ENC_STP_32_LDSTPAIR_PRE);
 		if(ctx->opc==2) OK(ENC_STP_64_LDSTPAIR_PRE);
@@ -25466,6 +25470,8 @@ int STP_gen(context *ctx, Instruction *instr)
 	/* class iclass_signed_scaled_offset */
 	/* opc=x0|101|V=0|010|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx */
 	if((INSWORD & 0x7FC00000)==0x29000000) {
+        ctx->wback = FALSE;
+        ctx->postindex = FALSE;
 		decode_fields32(ENC_STP_32_LDSTPAIR_OFF, ctx, instr);
 		if(ctx->opc==0) OK(ENC_STP_32_LDSTPAIR_OFF);
 		if(ctx->opc==2) OK(ENC_STP_64_LDSTPAIR_OFF);
@@ -25491,7 +25497,7 @@ int STP_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && (ctx->t==ctx->n || ctx->t2==ctx->n) && ctx->n!=0x1f) {
+	if(ctx->wback && (ctx->t==ctx->n || ctx->t2==ctx->n) && ctx->n!=0x1f) {
 		ctx->c = ConstrainUnpredictable(Unpredictable_WBOVERLAPST);
 		// assert
 		UNPREDICTABLE
@@ -25575,7 +25581,7 @@ int STRB_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25643,7 +25649,7 @@ int STRB_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25722,7 +25728,7 @@ int STRH_imm(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25789,7 +25795,7 @@ int STRH_reg(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -25936,7 +25942,7 @@ int STR_imm_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -26041,7 +26047,7 @@ int STR_reg_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -26241,7 +26247,7 @@ int STTR(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -26308,7 +26314,7 @@ int STTRB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -26375,7 +26381,7 @@ int STTRH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -26525,7 +26531,7 @@ int STURB(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -26587,7 +26593,7 @@ int STURH(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
@@ -26681,7 +26687,7 @@ int STUR_gen(context *ctx, Instruction *instr)
 		// assert
 		UNPREDICTABLE
 	}
-	if(ctx->memop==MemOp_STORE && ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
+	if(ctx->wback && ctx->n==ctx->t && ctx->n!=0x1f) {
 		// assignment from ConstrainUnpredictable()
 		// assert
 		UNPREDICTABLE
