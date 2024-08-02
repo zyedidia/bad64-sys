@@ -50,7 +50,7 @@
 
 #define DecodeBitMasksCheckUndefined(N, imms) \
 	if ((N == 0 && \
-	        (imms == 0x3D || imms == 0x3B || imms == 0x37 || imms == 0x2F || imms == 0x1F)) || \
+	        (imms == 0x3E || imms == 0x3D || imms == 0x3B || imms == 0x37 || imms == 0x2F || imms == 0x1F)) || \
 	    (N == 1 && imms == 0x3F)) \
 	{ \
 		return DECODE_STATUS_UNDEFINED; \
