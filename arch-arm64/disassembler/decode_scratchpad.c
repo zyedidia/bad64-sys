@@ -8617,8 +8617,7 @@ int decode_scratchpad(context* ctx, Instruction* instr)
 		ArrangementSpec arr_spec = table_8b_16b_4h_8h_2s_4s_1d_2d[(ctx->size << 1) | ctx->Q];
 		// {<Vt>.<T>}, [<Xn|SP>],#<imm>
 		ADD_OPERAND_MULTIREG_1(REG_V_BASE, arr_spec, ctx->t);
-		ADD_OPERAND_MEM_XN_SP;
-		ADD_OPERAND_IMM32(imm, 0);
+		ADD_OPERAND_MEM_POST_INDEX(REGSET_SP, REG_X_BASE, ctx->n, imm);
 		break;
 	}
 	case ENC_LD1_ASISDLSEP_I1_I1:  // one register, immediate offset
@@ -8628,8 +8627,7 @@ int decode_scratchpad(context* ctx, Instruction* instr)
 		ArrangementSpec arr_spec = table_8b_16b_4h_8h_2s_4s_1d_2d[(ctx->size << 1) | ctx->Q];
 		// {<Vt>.<T>}, [<Xn|SP>],<imm>
 		ADD_OPERAND_MULTIREG_1(REG_V_BASE, arr_spec, ctx->t);
-		ADD_OPERAND_MEM_XN_SP;
-		ADD_OPERAND_IMM32(imm, 0);
+		ADD_OPERAND_MEM_POST_INDEX(REGSET_SP, REG_X_BASE, ctx->n, imm);
 		break;
 	}
 	case ENC_LD4_ASISDLSO_B4_4B:
@@ -8861,8 +8859,7 @@ int decode_scratchpad(context* ctx, Instruction* instr)
 	{
 		// {<Vt>.H,<Vt2>.H,<Vt3>.H}[<index>], [<Xn|SP>], #6
 		ADD_OPERAND_MULTIREG_3_LANE(REG_V_BASE, _1H, ctx->t);
-		ADD_OPERAND_MEM_XN_SP;
-		ADD_OPERAND_IMM32(6, 0);
+		ADD_OPERAND_MEM_POST_INDEX(REGSET_SP, REG_X_BASE, ctx->n, 6);
 		break;
 	}
 	case ENC_LD3_ASISDLSOP_HX3_R3H:
